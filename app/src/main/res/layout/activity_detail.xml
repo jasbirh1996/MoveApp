@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootDetail"
+
+    android:background="#000"
+    tools:context=".View.UserInterface.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="26dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_bookmark_border_24"
+                android:layout_marginTop="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/titleWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="413dp"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:padding="2dp"
+                    android:id="@+id/detailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="36sp"
+                    android:textColor="#fff"
+                    android:text="Jhon wick" />
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_width="48dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/detailTitle"
+                    android:padding="2dp"
+                    android:background="@drawable/reviewshape"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/star"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:src="@drawable/star" />
+
+                    <TextView
+                        android:id="@+id/review"
+                        android:layout_toRightOf="@id/star"
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="5.2"
+                        android:layout_marginLeft="5dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/genricWrapper"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/titleWrapper">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_genric"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/trailerWrapper"
+                android:layout_below="@id/genricWrapper"
+                android:layout_width="170dp"
+                android:layout_height="38dp"
+                android:padding="5dp"
+                android:background="@drawable/reviewshape">
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play Trailer"
+                    android:textSize="16sp"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/trailer"
+                    android:src="@drawable/play"
+                    android:layout_alignParentRight="true" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/trailerWrapper"
+                android:id="@+id/infoContainer"
+                android:layout_width="381dp"
+                android:layout_height="149dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp">
+
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:text="Info" />
+
+                <View
+                    android:id="@+id/underline"
+                    android:layout_width="48dp"
+                    android:layout_height="1dp"
+                    android:textColor="#FF2738"
+                    android:background="#FF2738"
+                    android:layout_below="@id/info" />
+
+                <TextView
+                    android:id="@+id/getInfo"
+                    android:layout_width="match_parent"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/underline"
+                    android:lines="3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/castwrapper"
+                android:layout_below="@+id/infoContainer"
+                android:layout_width="381dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp">
+
+
+                <TextView
+                    android:id="@+id/cast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:text="Cast" />
+
+                <View
+                    android:id="@+id/underline2"
+                    android:layout_width="48dp"
+                    android:layout_height="1dp"
+                    android:textColor="#FF2738"
+                    android:background="#FF2738"
+                    android:layout_below="@id/cast" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_cast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/underline2"
+                    android:layout_marginTop="30dp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

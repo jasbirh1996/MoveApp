@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="211dp"
+    android:background="#000"
+    android:layout_marginLeft="20dp"
+    android:layout_height="375dp">
+
+    <ImageView
+        android:id="@+id/posterImage"
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:src="@drawable/postere" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="2dp"
+        android:textColor="#fff"
+        android:layout_marginBottom="4dp"
+        android:text="MovieName" />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/reviewshape"
+        android:layout_marginBottom="2dp"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star" />
+
+        <TextView
+            android:id="@+id/review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="7.5"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
