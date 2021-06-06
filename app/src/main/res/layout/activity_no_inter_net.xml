@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.View.UserInterface.SplashScreen">
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:textSize="35sp"
-        android:src="@drawable/movies"
+    tools:context=".ui.View.UserInterface.NoInterNet">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:padding="5dp"/>
+        android:text="No Internet"/>
+
+
+
 
 </RelativeLayout>

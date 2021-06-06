@@ -7,7 +7,7 @@
     android:id="@+id/rootDetail"
 
     android:background="#000"
-    tools:context=".View.UserInterface.DetailActivity">
+    tools:context=".ui.View.UserInterface.DetailActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -164,7 +164,7 @@
             <RelativeLayout
                 android:id="@+id/castwrapper"
                 android:layout_below="@+id/infoContainer"
-                android:layout_width="381dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp">
