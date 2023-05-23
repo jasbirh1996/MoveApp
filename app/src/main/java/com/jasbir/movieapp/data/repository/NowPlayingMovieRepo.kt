@@ -18,7 +18,7 @@ class NowPlayingMovieRepo  {
         val nowplayingmovieResppnse = MutableLiveData<List<NowPlayingResponse.Result>>()
 
         disposable.add(Networking.create()
-            .queryGetNowMovie("cc2da08f2f188efc3d713d820c137298","en-US",1).subscribeOn(Schedulers.io())
+            .queryGetNowMovie("Add Your Key","en-US",1).subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread()).subscribe(
                 {
 
@@ -39,7 +39,7 @@ class NowPlayingMovieRepo  {
         val trendinglivedata = MutableLiveData<List<NowPlayingResponse.Result>>()
 
         disposable.add(Networking.create()
-            .queryTrend("","en-US",1).subscribeOn(Schedulers.io())
+            .queryTrend("cc2da08f2f188efc3d713d820c137298","en-US",1).subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread()).subscribe(
                 {
                     trendinglivedata.value = it.results
