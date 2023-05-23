@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MovieOverview</string>
+    <string name="app_name">MovieApp</string>
     <string name="noInternet">Please Check Your Internet</string>
 </resources>

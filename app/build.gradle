@@ -1,18 +1,17 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.jasbir.movie"
+        applicationId "com.jasbir.movieapp"
         minSdkVersion 23
-        targetSdkVersion 30
-        versionCode 2
-        versionName "2.0"
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -30,6 +29,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding true
+    }
+
 }
 
 dependencies {
@@ -78,6 +81,7 @@ dependencies {
     // shrimmer
     implementation 'com.facebook.shimmer:shimmer:0.5.0'
 
-
+//in app update
+    implementation 'com.google.android.play:core:1.10.3'
 
 }

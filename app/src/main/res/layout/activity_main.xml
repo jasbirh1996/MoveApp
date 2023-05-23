@@ -11,7 +11,7 @@
 <ScrollView
     android:layout_width="match_parent"
     android:background="#000"
-    android:id="@+id/root"
+    android:id="@+id/root2"
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,11 +28,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textSize="30sp"
-                android:text="Movies"
                 android:layout_centerVertical="true"
-                android:textColor="#fff"/>
+                android:text="Movies"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
             <ImageView
                 android:visibility="invisible"
                 android:layout_width="wrap_content"
@@ -46,10 +47,10 @@
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
             android:id="@+id/rv_nowPlaying"
+            android:layout_width="match_parent"
             android:layout_height="380dp"
-            android:layout_below="@+id/topbar"/>
+            android:layout_below="@+id/topbar" />
 
         <RelativeLayout
             android:id="@+id/trendingbar"
@@ -79,11 +80,11 @@
         </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_trending"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/trendingbar"
-            android:layout_marginTop="10dp"
-            android:id="@+id/rv_trending"/>
+            android:layout_marginTop="10dp" />
 
     </RelativeLayout>
 

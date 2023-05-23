@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jasbir.movie">
+    package="com.jasbir.movieapp">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,17 +13,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Flix"
         android:usesCleartextTraffic="false">
-        <activity android:name="com.jasbir.movie.ui.View.UserInterface.ViewAll"></activity>
-        <activity android:name="com.jasbir.movie.ui.View.UserInterface.NoInterNet" />
-        <activity android:name="com.jasbir.movie.ui.View.UserInterface.SplashScreen">
+        <activity android:name="com.jasbir.movieapp.ui.View.UserInterface.ViewAll"></activity>
+        <activity android:name="com.jasbir.movieapp.ui.View.UserInterface.NoInterNet" />
+        <activity android:name="com.jasbir.movieapp.ui.View.UserInterface.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.jasbir.movie.ui.View.UserInterface.DetailActivity" />
-        <activity android:name="com.jasbir.movie.ui.View.UserInterface.MainActivity" />
+        <activity android:name="com.jasbir.movieapp.ui.View.UserInterface.DetailActivity" />
+        <activity android:name="com.jasbir.movieapp.ui.View.UserInterface.MainActivity" />
     </application>
 
 </manifest>
